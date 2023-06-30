@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include pecas *.css
+recursive-include pecas *.csv
+recursive-include pecas *.html
+recursive-include pecas *.ico
+recursive-include pecas *.js
+recursive-include pecas *.json
+recursive-include pecas *.md
+recursive-include pecas *.png
+recursive-include pecas *.py
+recursive-include pecas *.svg
+recursive-include pecas *.txt
+recursive-exclude pecas *.pyc
