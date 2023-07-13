@@ -9,9 +9,14 @@ app_license = "aa"
 
 # Includes in <head>
 # ------------------
+app_include_css = "/assets/pecas/css/pecas.css"
+
+after_install = "pecas.install.after_install"
+after_migrate="pecas.install.after_install"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/pecas/css/pecas.css"
+
 # app_include_js = "/assets/pecas/js/pecas.js"
 
 # include js, css files in header of web template
