@@ -11,6 +11,31 @@ app_license = "aa"
 # ------------------
 app_include_css = "/assets/pecas/css/pecas.css"
 
+doctype_js = {
+    "Customer": "lab_pecas/client_scripts/customer.js",
+    "Company":"lab_pecas/client_scripts/company.js",
+    "Address":"lab_pecas/client_scripts/address.js",
+    "Supplier":"lab_pecas/client_scripts/supplier.js",
+    "Supplier Quotation":"lab_pecas/client_scripts/supplier_quotation.js",
+    "User":"lab_pecas/client_scripts/user.js",
+    "Quotation":"lab_pecas/client_scripts/quotation.js",
+    "Sales Order":"lab_pecas/client_scripts/sales_order.js",
+    "Batch":"lab_pecas/client_scripts/batch.js",
+    "Item":"lab_pecas/client_scripts/item.js",
+    "Stock Entry":"lab_pecas/client_scripts/stock_entry.js",
+    "Stock Reconciliation":"lab_pecas/client_scripts/stock_reconciliation.js",
+    "Sales Invoice":"lab_pecas/client_scripts/sales_invoice.js",
+    "Warehouse":"lab_pecas/client_scripts/warehouse.js"
+}
+
+doc_events = {
+    "Quotation": {
+        "autoname": [
+            "pecas.lab_pecas.constants.quotation.autoname",
+        ],
+    },
+}
+
 after_install = "pecas.install.after_install"
 after_migrate="pecas.install.after_install"
 
