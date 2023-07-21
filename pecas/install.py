@@ -9,12 +9,12 @@ def after_install():
     try:
         print("Setting Up Custom Fields")
         settinup_custom_fields()
-        delete_workspace()
-
+        # delete_workspace()
+        
     except Exception as e:
         click.secho(
             (
-                "Installation for GaxisDynamic failed due to an error."
+                "Installation for PECAS failed due to an error."
                 " Please try re-installing the app or"
                 f" report the issue on  if not resolved."
             ),
@@ -22,24 +22,15 @@ def after_install():
         )
         raise e
 
-    click.secho("Thank you for installing GaxisDynamic!", fg="green")
+    click.secho("Thank you for installing PECAS!", fg="green")
 
 
-def delete_workspace():
-    print("start")
-    frappe.delete_doc("Workspace", "crm",force=True)
-    frappe.delete_doc("Workspace", "hr", force=True)
-    frappe.delete_doc("Workspace", "Manufacturing", force=True)
-    frappe.delete_doc("Workspace", "quality", force=True)
-    frappe.delete_doc("Workspace", "Projects", force=True)
-    frappe.delete_doc("Workspace", "Loans", force=True)
-    frappe.delete_doc("Workspace", "support", force=True)
-    frappe.delete_doc("Workspace", "Payroll", force=True)
-    frappe.delete_doc("Workspace", "Assets", force=True)
-    frappe.delete_doc("Workspace", "GST India", force=True)
-    frappe.delete_doc("Workspace", "Accounting", force=True)
-    frappe.delete_doc("Workspace", "Buying", force=True)
-    frappe.delete_doc("Workspace", "Stock", force=True)
-    frappe.delete_doc("Workspace", "Selling", force=True)
-    print("end")
     
+def delete_workspace():
+    Workspaces=["Manufacturing","crm","Quality","Payroll","Accounting","Projects","Loans","support","Assets","GST India","Buying","Stock","Selling"]
+    print("ex")
+    for ws in Workspaces:
+        frappe.delete_doc_if_exists("Workspace", ws)
+    
+    for ws in Workspaces:
+        frappe.db.set_value("Workspace", ws, "public", 0)    
