@@ -9,7 +9,7 @@ def after_install():
     try:
         print("Setting Up Custom Fields")
         settinup_custom_fields()
-        # delete_workspace()
+        delete_workspace()
         
     except Exception as e:
         click.secho(
