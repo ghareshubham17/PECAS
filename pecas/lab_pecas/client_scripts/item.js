@@ -3,6 +3,7 @@ frappe.ui.form.on('Item', {
 	  // GAxis Dynamic Logic
 	  gaxis_dynamic(frm);
 	},
+
 	after_save: function (frm) {		
 		frappe.ui.toolbar.clear_cache()			
 	},
@@ -14,6 +15,9 @@ var gaxis_dynamic = function(frm, bool=true) {
 		if(frm.is_new()) {
 			frm.set_df_property('disabled', 'hidden', true);		
 		}
+        //set value
+		frm.set_value("is_stock_item",0);
+		frm.set_value("include_item_in_manufacturing",0);
 
 		// Set Read Only property		
 		frm.set_df_property("is_fixed_asset", "read_only", bool);
@@ -32,6 +36,15 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("quality_inspection_template", "read_only", bool);
 		frm.set_df_property("inspection_required_before_delivery", "read_only", bool);
 		frm.set_df_property("last_purchase_rate", "read_only", bool);
+		frm.set_df_property("item_defaults", "read_only", bool);
+		frm.set_df_property("brand", "read_only", bool);
+		frm.set_df_property("customer_details", "read_only", bool);
+		frm.set_df_property("grant_commission", "read_only", bool);
+		frm.set_df_property("sales_uom", "read_only", bool);
+		frm.set_df_property("max_discount", "read_only", bool);
+		frm.set_df_property("is_sales_item", "read_only", bool);
+		frm.set_df_property("is_stock_item", "read_only", bool);
+		frm.set_df_property("include_item_in_manufacturing", "read_only", bool);
 
 		// Set Hidden property
 		frm.set_df_property("is_fixed_asset", "hidden", bool);
@@ -50,5 +63,14 @@ var gaxis_dynamic = function(frm, bool=true) {
 	    frm.set_df_property("quality_inspection_template", "hidden", bool);
 		frm.set_df_property("inspection_required_before_delivery", "hidden", bool);
 		frm.set_df_property("last_purchase_rate", "hidden", bool);
+		frm.set_df_property("item_defaults", "hidden", bool);
+		frm.set_df_property("brand", "hidden", bool);
+		frm.set_df_property("customer_details", "hidden", bool);
+		frm.set_df_property("grant_commission", "hidden", bool);
+		frm.set_df_property("sales_uom", "hidden", bool);
+		frm.set_df_property("max_discount", "hidden", bool);
+		frm.set_df_property("is_sales_item", "hidden", bool);
+		frm.set_df_property("is_stock_item", "hidden", bool);
+		frm.set_df_property("include_item_in_manufacturing", "hidden", true);
 	}
 }

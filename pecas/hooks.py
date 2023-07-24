@@ -25,7 +25,8 @@ doctype_js = {
     "Stock Entry":"lab_pecas/client_scripts/stock_entry.js",
     "Stock Reconciliation":"lab_pecas/client_scripts/stock_reconciliation.js",
     "Sales Invoice":"lab_pecas/client_scripts/sales_invoice.js",
-    "Warehouse":"lab_pecas/client_scripts/warehouse.js"
+    "Warehouse":"lab_pecas/client_scripts/warehouse.js",
+    "Item Group":"lab_pecas/client_scripts/item_group.js"
 }
 
 doc_events = {
@@ -229,3 +230,7 @@ after_migrate="pecas.install.after_install"
 # auth_hooks = [
 #	"pecas.auth.validate"
 # ]
+
+fixtures=[
+    "Workspace"
+]

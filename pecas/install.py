@@ -27,8 +27,7 @@ def after_install():
 
     
 def delete_workspace():
-    Workspaces=["Manufacturing","crm","Quality","Payroll","Accounting","Projects","Loans","support","Assets","GST India","Buying","Stock","Selling"]
-    print("ex")
+    Workspaces=["Manufacturing","crm","Quality","Payroll","Projects","Loans","support","Assets","GST India"]
     for ws in Workspaces:
         frappe.delete_doc_if_exists("Workspace", ws)
     
