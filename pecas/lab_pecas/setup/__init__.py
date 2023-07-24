@@ -9,6 +9,7 @@ from frappe.custom.doctype.custom_field.custom_field import (
 def after_install():
     create_custom_fields()
     removing_fields()
+    set_checkbox_value()
 
 
 def create_custom_fields():
@@ -62,4 +63,12 @@ def hide_child_table_field(doctype_name, fieldname):
             field.hidden = 1
             break
     doctype.save()
-    
+
+
+def set_checkbox_value():
+    # Replace "Your DocType" with the name of your DocType for which you want to disable Quick Entry
+    doc_type = "Item"
+    doctype_obj = frappe.get_doc("DocType", doc_type)
+    doctype_obj.quick_entry = 0
+    doctype_obj.save()
+
