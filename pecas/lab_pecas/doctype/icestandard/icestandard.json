@@ -30,7 +30,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-04 15:18:54.815546",
+ "modified": "2023-07-24 14:02:31.780512",
  "modified_by": "Administrator",
  "module": "Lab_Pecas",
  "name": "ICEStandard",
@@ -45,6 +45,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GAxis Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
