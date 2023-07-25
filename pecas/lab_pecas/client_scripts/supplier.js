@@ -22,6 +22,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("default_receivable_accounts", "read_only", bool);
 		frm.set_df_property("allow_purchase_invoice_creation_without_purchase_order", "read_only", bool);
 		frm.set_df_property("allow_purchase_invoice_creation_without_purchase_receipt", "read_only", bool);
+		frm.set_df_property("language", "read_only", bool);
 
 		
 		// Set Hidden property
@@ -29,5 +30,6 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("tax_category", "hidden", bool);
 		frm.set_df_property("tax_withholding_category", "hidden", bool);
 		frm.set_df_property("default_receivable_accounts", "hidden", bool);
+		frm.set_df_property("language", "hidden", bool);
 	}
 }

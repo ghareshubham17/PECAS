@@ -3,7 +3,6 @@ frappe.ui.form.on('Company', {
 	  // GAxis Dynamic Logic
 	  gaxis_dynamic(frm);
 	  frm.dashboard.hide();
-	  frm.set_value('default_letter_head', 'Aditech Plastics');
 	},
 	validate: function (frm) {
 		// Company
@@ -88,7 +87,6 @@ frappe.ui.form.on('Company', {
 
 var gaxis_dynamic = function(frm, bool=true) {
 	
-	frm.set_value('default_letter_head', 'Aditech Plastics');
 	frm.get_field("gstin").set_description("GSTIN, short for Goods and Services Tax Identification Number, is a unique 15 digit identification number assigned to every taxpayer (primarily dealer or supplier or any business entity) registered under the GST regime.\n\nUIN stands for Unique Identity Number. It is the registration number given to certain specified persons , instead of GSTIN.");
 	frm.get_field("pan").set_description("Permanent Account Number (PAN) is a ten-digit alphanumeric number, issued by the Income Tax Department of India.");
 	frm.get_field("cin").set_description("Corporate Identification Number (CIN) is a 21 digits alpha-numeric code issued to companies incorporated within the country on being registered by the ROC situated in different states across India under the MCA.");
