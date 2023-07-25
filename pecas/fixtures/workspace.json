@@ -266,22 +266,6 @@
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
-   },
-   {
-    "dependencies": "Item, Customer",
-    "hidden": 0,
-    "icon": null,
-    "is_query_report": 0,
-    "label": "Quotation",
-    "link_count": 0,
-    "link_to": "Quotation",
-    "link_type": "DocType",
-    "onboard": 1,
-    "only_for": null,
-    "parent": "Selling",
-    "parentfield": "links",
-    "parenttype": "Workspace",
-    "type": "Link"
    }
   ],
   "modified": "2023-07-25 13:39:38.623092",
