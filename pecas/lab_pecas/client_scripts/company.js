@@ -87,8 +87,6 @@ frappe.ui.form.on('Company', {
 
 var gaxis_dynamic = function(frm, bool=true) {
 	
-	//set value for abbr
-	frm.set_value("abbr","PECaS");
 	
 	frm.get_field("gstin").set_description("GSTIN, short for Goods and Services Tax Identification Number, is a unique 15 digit identification number assigned to every taxpayer (primarily dealer or supplier or any business entity) registered under the GST regime.\n\nUIN stands for Unique Identity Number. It is the registration number given to certain specified persons , instead of GSTIN.");
 	frm.get_field("pan").set_description("Permanent Account Number (PAN) is a ten-digit alphanumeric number, issued by the Income Tax Department of India.");

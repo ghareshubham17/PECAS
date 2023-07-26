@@ -35,6 +35,11 @@ doc_events = {
             "pecas.lab_pecas.constants.quotation.autoname",
         ],
     },
+    "Company": {
+        "on_update": [
+            "pecas.lab_pecas.constants.company.on_update_abbr",
+        ],
+    },
 }
 
 after_install = "pecas.install.after_install"
