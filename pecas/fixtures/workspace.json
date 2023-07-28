@@ -916,6 +916,22 @@
     "parentfield": "links",
     "parenttype": "Workspace",
     "type": "Link"
+   },
+   {
+    "dependencies": null,
+    "hidden": 0,
+    "icon": null,
+    "is_query_report": 0,
+    "label": "Item Attribute",
+    "link_count": 0,
+    "link_to": "Item Attribute",
+    "link_type": "DocType",
+    "onboard": 0,
+    "only_for": null,
+    "parent": "Buying",
+    "parentfield": "links",
+    "parenttype": "Workspace",
+    "type": "Link"
    }
   ],
   "modified": "2023-07-25 13:39:25.412919",

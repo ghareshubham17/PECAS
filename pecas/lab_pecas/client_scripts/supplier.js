@@ -26,6 +26,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("is_internal_supplier", "read_only", bool);
 		frm.set_df_property("accounts", "read_only", bool);
 		frm.set_df_property("block_supplier_section", "read_only", bool);
+		frm.set_df_property("default_bank_account", "read_only", bool);
 
 		
 		// Set Hidden property
@@ -37,5 +38,6 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("is_internal_supplier", "hidden", bool);
 		frm.set_df_property("accounts", "hidden", bool);
 		frm.set_df_property("block_supplier_section", "hidden", bool);
+		frm.set_df_property("default_bank_account", "hidden", bool);
 	}
 }

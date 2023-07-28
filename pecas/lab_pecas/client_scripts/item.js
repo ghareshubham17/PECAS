@@ -41,7 +41,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("customer_details", "read_only", bool);
 		frm.set_df_property("grant_commission", "read_only", bool);
 		frm.set_df_property("sales_uom", "read_only", bool);
-		frm.set_df_property("max_discount", "read_only", bool);
+		// frm.set_df_property("max_discount", "read_only", bool);
 		frm.set_df_property("is_sales_item", "read_only", bool);
 		frm.set_df_property("is_stock_item", "read_only", bool);
 		frm.set_df_property("include_item_in_manufacturing", "read_only", bool);
@@ -68,7 +68,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("customer_details", "hidden", bool);
 		frm.set_df_property("grant_commission", "hidden", bool);
 		frm.set_df_property("sales_uom", "hidden", bool);
-		frm.set_df_property("max_discount", "hidden", bool);
+		// frm.set_df_property("max_discount", "hidden", bool);
 		frm.set_df_property("is_sales_item", "hidden", bool);
 		frm.set_df_property("is_stock_item", "hidden", bool);
 		frm.set_df_property("include_item_in_manufacturing", "hidden", true);

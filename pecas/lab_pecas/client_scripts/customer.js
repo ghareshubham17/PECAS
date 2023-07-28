@@ -30,6 +30,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("default_sales_partner", "read_only", bool);
 		frm.set_df_property("default_commission_rate", "read_only", bool);
 		frm.set_df_property("loyalty_points_tab", "read_only", bool);
+		frm.set_df_property("default_bank_account", "read_only", bool);
 
 
 		// Set Hidden property
@@ -45,5 +46,6 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("default_sales_partner", "hidden", bool);
 		frm.set_df_property("default_commission_rate", "hidden", bool);
 		frm.set_df_property("loyalty_points_tab", "hidden", bool);
+		frm.set_df_property("default_bank_account", "hidden", bool);
 	}
 }
