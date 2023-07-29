@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestICEStandard(FrappeTestCase):
+class TestIECStandard(FrappeTestCase):
 	pass

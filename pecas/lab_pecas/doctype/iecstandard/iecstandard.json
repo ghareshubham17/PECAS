@@ -1,7 +1,7 @@
 {
  "actions": [],
- "allow_rename": 1,
- "creation": "2023-07-04 15:18:54.815546",
+ "autoname": "field:standard_no",
+ "creation": "2023-07-29 10:41:32.908369",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,7 +15,8 @@
   {
    "fieldname": "standard_no",
    "fieldtype": "Data",
-   "label": "Standard No"
+   "label": "Standard No",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -30,10 +31,12 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-24 14:02:31.780512",
+ "modified": "2023-07-29 12:04:59.020898",
  "modified_by": "Administrator",
  "module": "Lab_Pecas",
- "name": "ICEStandard",
+ "name": "IECStandard",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
