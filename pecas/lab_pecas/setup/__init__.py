@@ -55,7 +55,10 @@ def removing_fields():
     #Supplier Quotation Item
     hide_child_table_field('Supplier Quotation Item','page_break')
 
-@frappe.whitelist()
+    #Item Tax
+    hide_child_table_field('Item Tax','minimum_net_rate')
+    hide_child_table_field('Item Tax','maximum_net_rate')
+
 def hide_child_table_field(doctype_name, fieldname):
     doctype = frappe.get_doc("DocType", doctype_name)
     for field in doctype.fields:
