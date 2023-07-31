@@ -26,7 +26,8 @@ doctype_js = {
     "Stock Reconciliation":"lab_pecas/client_scripts/stock_reconciliation.js",
     "Sales Invoice":"lab_pecas/client_scripts/sales_invoice.js",
     "Warehouse":"lab_pecas/client_scripts/warehouse.js",
-    "Item Group":"lab_pecas/client_scripts/item_group.js"
+    "Item Group":"lab_pecas/client_scripts/item_group.js",
+    "Contact":"lab_pecas/client_scripts/contact.js"
 }
 
 doc_events = {
