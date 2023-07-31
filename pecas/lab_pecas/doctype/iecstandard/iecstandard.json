@@ -15,23 +15,29 @@
   {
    "fieldname": "standard_no",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Standard No",
    "unique": 1
   },
   {
    "fieldname": "description",
    "fieldtype": "Long Text",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "file",
    "fieldtype": "Attach",
+   "in_list_view": 1,
    "label": "File"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-29 15:58:44.782051",
+ "modified": "2023-07-31 11:19:31.696511",
  "modified_by": "Administrator",
  "module": "Lab_Pecas",
  "name": "IECStandard",
