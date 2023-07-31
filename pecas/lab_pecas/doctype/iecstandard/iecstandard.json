@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:standard_no",
+ "autoname": "autoincrement",
  "creation": "2023-07-29 10:41:32.908369",
  "default_view": "List",
  "doctype": "DocType",
@@ -31,12 +31,12 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-07-29 12:04:59.020898",
+ "modified": "2023-07-29 15:58:44.782051",
  "modified_by": "Administrator",
  "module": "Lab_Pecas",
  "name": "IECStandard",
  "name_case": "Title Case",
- "naming_rule": "By fieldname",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
