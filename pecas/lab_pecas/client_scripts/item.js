@@ -45,6 +45,8 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("is_sales_item", "read_only", bool);
 		frm.set_df_property("is_stock_item", "read_only", bool);
 		frm.set_df_property("include_item_in_manufacturing", "read_only", bool);
+		frm.set_df_property("over_delivery_receipt_allowance", "read_only", bool);
+		frm.set_df_property("over_billing_allowance", "read_only", bool);
 
 		// Set Hidden property
 		frm.set_df_property("is_fixed_asset", "hidden", bool);
@@ -72,5 +74,7 @@ var gaxis_dynamic = function(frm, bool=true) {
 		frm.set_df_property("is_sales_item", "hidden", bool);
 		frm.set_df_property("is_stock_item", "hidden", bool);
 		frm.set_df_property("include_item_in_manufacturing", "hidden", true);
+		frm.set_df_property("over_delivery_receipt_allowance", "hidden", true);
+		frm.set_df_property("over_billing_allowance", "hidden", true);
 	}
 }
