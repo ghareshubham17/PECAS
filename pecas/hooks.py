@@ -27,18 +27,30 @@ doctype_js = {
     "Sales Invoice":"lab_pecas/client_scripts/sales_invoice.js",
     "Warehouse":"lab_pecas/client_scripts/warehouse.js",
     "Item Group":"lab_pecas/client_scripts/item_group.js",
-    "Contact":"lab_pecas/client_scripts/contact.js"
+    "Contact":"lab_pecas/client_scripts/contact.js",
+    "Opportunity":"lab_pecas/client_scripts/opportunity.js"
 }
 
 doc_events = {
     "Quotation": {
         "autoname": [
             "pecas.lab_pecas.constants.quotation.autoname",
+            
         ],
     },
     "Company": {
         "on_update": [
             "pecas.lab_pecas.constants.company.on_update_abbr",
+        ],
+    },
+    "Opportunity": {
+        "autoname": [
+            "pecas.lab_pecas.constants.opportunity.autoname",
+        ],
+    },
+    "Sales Order": {
+        "autoname": [
+            "pecas.lab_pecas.constants.sales_order.autoname",
         ],
     },
 }
@@ -238,5 +250,5 @@ after_migrate="pecas.install.after_install"
 # ]
 
 fixtures=[
-    "Workspace"
+    "Workflow",
 ]

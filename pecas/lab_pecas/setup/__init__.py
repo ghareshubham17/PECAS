@@ -2,14 +2,21 @@ import frappe
 from pecas.lab_pecas.constants.custom_fields import (
     CUSTOM_FIELDS,
 )
+from frappe import _
 from frappe.custom.doctype.custom_field.custom_field import (
     create_custom_fields as _create_custom_fields,
 )
+from frappe.desk.page.setup_wizard.setup_wizard import make_records
+from pecas.lab_pecas.constants.permission_rule import permission_rules_for_doctypes
+from pecas.lab_pecas.constants.opportunity import set_checkbox_value as opputunity_changes
 
 def after_install():
     create_custom_fields()
     removing_fields()
     _sets_checkbox_value()
+    opputunity_changes()
+    insert_default_bulk_data()
+    permission_rules_for_doctypes()
 
 
 def create_custom_fields():
@@ -73,8 +80,23 @@ def _sets_checkbox_value():
     set_checkbox_value("Item")
     set_checkbox_value("Customer")
 
-
 def set_checkbox_value(doc_type):
     doctype_obj = frappe.get_doc("DocType", doc_type)
     doctype_obj.quick_entry = 0
     doctype_obj.save()
+
+
+def insert_default_bulk_data():
+	add_opportunity_type()
+        
+
+def add_opportunity_type():
+    print("sss")
+    records = [
+		# Price Lists
+		{
+			"doctype": "Opportunity Type",
+			"name": _("Services"),
+		},
+	]
+    make_records(records)       
